@@ -1,13 +1,13 @@
 import pandas as pd
-import calendar
-import numpy as np
-from datetime import timedelta
+# import calendar
+# import numpy as np
+# from datetime import timedelta
 from openpyxl.utils import get_column_letter
-import tkinter as tk
-from tkinter import filedialog, messagebox
+# import tkinter as tk
+# from tkinter import filedialog, messagebox
 from datetime import datetime
 import os
-from openpyxl.styles import Alignment, Font, Color, PatternFill
+from openpyxl.styles import Alignment, Font #, Color, PatternFill
 import random
 
 ### my own function imports
@@ -364,36 +364,36 @@ def quit_application():
 
 ##############
 
-# Main application window
-root = tk.Tk()
-root.title("UCH Call List Generator")
+# # Main application window
+# root = tk.Tk()
+# root.title("UCH Call List Generator")
 
-# Title label
-title_label = tk.Label(root, text="UCH Call List Generator", font=("Helvetica", 16))
-title_label.pack(side=tk.TOP, pady=10)
+# # Title label
+# title_label = tk.Label(root, text="UCH Call List Generator", font=("Helvetica", 16))
+# title_label.pack(side=tk.TOP, pady=10)
 
-# Button to select the file
-select_button = tk.Button(root, text="Select Excel File", command=select_file_and_run)
-select_button.pack(side=tk.TOP, pady=10)
+# # Button to select the file
+# select_button = tk.Button(root, text="Select Excel File", command=select_file_and_run)
+# select_button.pack(side=tk.TOP, pady=10)
 
-# Descriptive text label
-description_label = tk.Label(root, text="Select the timetable template that you edited, to generate the actual call list.\n"
-                                        "It will put the call list excel into the same folder. It won't overwrite any existing files.\n\n"
-                                        "F stands for the fixed on-call dates.\n\n"
-                                        "Reasons for error: \n"
-                                        "    1. You didn't close the Excel file.\n"
-                                        "    2. You didn't fill in the expected_total for all doctors.\n"
-                                        "    3. You changed anything outside the expected_total column and the timetable cells. \n"
-                                        "       (you should create the template again using 01_create_template.exe if any change is needed.)\n")
-description_label.pack(side=tk.TOP, pady=10)
+# # Descriptive text label
+# description_label = tk.Label(root, text="Select the timetable template that you edited, to generate the actual call list.\n"
+#                                         "It will put the call list excel into the same folder. It won't overwrite any existing files.\n\n"
+#                                         "F stands for the fixed on-call dates.\n\n"
+#                                         "Reasons for error: \n"
+#                                         "    1. You didn't close the Excel file.\n"
+#                                         "    2. You didn't fill in the expected_total for all doctors.\n"
+#                                         "    3. You changed anything outside the expected_total column and the timetable cells. \n"
+#                                         "       (you should create the template again using 01_create_template.exe if any change is needed.)\n")
+# description_label.pack(side=tk.TOP, pady=10)
 
-# Button to quit the application
-quit_button = tk.Button(root, text="Quit", command=quit_application)
-quit_button.pack(side=tk.BOTTOM, pady=10)
+# # Button to quit the application
+# quit_button = tk.Button(root, text="Quit", command=quit_application)
+# quit_button.pack(side=tk.BOTTOM, pady=10)
 
-# Footer label with author's name
-footer_label = tk.Label(root, text="by Dr Wong Chung Wai William", font=("Helvetica", 10))
-footer_label.pack(side=tk.BOTTOM, pady=5)
+# # Footer label with author's name
+# footer_label = tk.Label(root, text="by Dr Wong Chung Wai William", font=("Helvetica", 10))
+# footer_label.pack(side=tk.BOTTOM, pady=5)
 
-# Run the GUI event loop
-root.mainloop()
+# # Run the GUI event loop
+# root.mainloop()

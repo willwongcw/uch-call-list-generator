@@ -1,4 +1,4 @@
-import pandas as pd
+# import pandas as pd
 import numpy as np
 
 def initial_deduct_expected_totals(df, expected_total): 
